@@ -21,8 +21,14 @@ get '/secret4' do
     "Andrew"
 end
 
-get '/cat' do
-  "<marquee direction='left' style='border: 3px dashed red'>
-    <img src='http://bit.ly/1eze8aE'/>
-    </marquee>"
+get '/random-cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  
+  @age = params[:age]
+  @name = params[:name]
+  erb(:index)
 end
