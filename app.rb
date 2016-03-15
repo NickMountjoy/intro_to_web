@@ -26,9 +26,15 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/named-cat' do
+post '/named-cat' do
   p params
   @name = params[:name]
-  @age = params[:age]
   erb(:index)
+end
+
+get '/form' do
+  "<form action= '/named-cat' method='post'>
+    <input type='text' name='name' value=''/>
+    <input type='submit' value='Say ma name fool!'/>
+  </form>"
 end

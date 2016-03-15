@@ -1,11 +1,10 @@
-
 <h1>My name is <%=@name%></h1>
-<!-- <% if !@name%> -->
+<% if !@name%>
 <form action= '/named-cat' method='get'>
   <input type='text' name='name' value='name'/>
   <input type='submit' value='name me'/>
 </form>
-<!-- <% end %> -->
+<% end %>
 <marquee direction='right' style='border: 3px dashed red'>
 <img src='http://bit.ly/1eze8aE'/>
 </marquee>
