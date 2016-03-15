@@ -27,8 +27,8 @@ get '/random-cat' do
 end
 
 get '/named-cat' do
-  
-  @age = params[:age]
+  p params
   @name = params[:name]
+  @age = params[:age]
   erb(:index)
 end
