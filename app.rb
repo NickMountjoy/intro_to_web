@@ -20,3 +20,9 @@ end
 get '/secret4' do
     "Andrew"
 end
+
+get '/cat' do
+  "<marquee direction='left' style='border: 3px dashed red'>
+    <img src='http://bit.ly/1eze8aE'/>
+    </marquee>"
+end
